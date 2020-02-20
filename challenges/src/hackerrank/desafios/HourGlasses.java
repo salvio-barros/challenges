@@ -2,42 +2,41 @@ package hackerrank.desafios;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
+class Element{
+	 int row;
+	 int column;
+	 int value;
+	public int getRow() {
+		return row;
+	}
+	public void setRow(int row) {
+		this.row = row;
+	}
+	public int getColumn() {
+		return column;
+	}
+	public void setColumn(int column) {
+		this.column = column;
+	}
+	public int getValue() {
+		return value;
+	}
+	public void setValue(int value) {
+		this.value = value;
+	}
+	 
+	 
+}
+
 public class HourGlasses {
 
-	  private static final Scanner scanner = new Scanner(System.in);
+	private static final Scanner scanner = new Scanner(System.in);
 	 
-	
-	 class Element{
-		 int row;
-		 int column;
-		 int value;
-		public int getRow() {
-			return row;
-		}
-		public void setRow(int row) {
-			this.row = row;
-		}
-		public int getColumn() {
-			return column;
-		}
-		public void setColumn(int column) {
-			this.column = column;
-		}
-		public int getValue() {
-			return value;
-		}
-		public void setValue(int value) {
-			this.value = value;
-		}
-		 
-		 
-	 }
 	
 	public static void main(String[] args) throws IOException {
         
@@ -54,36 +53,40 @@ public class HourGlasses {
         }
 
         int result = hourglassSum(arr);
+        System.out.println(result);
 
         scanner.close();
     }
 
 	private static int hourglassSum(int[][] arr) {
-		int hourglassDimension = arr.length/2;
+		int hourglassDimension = arr.length-1;
+	
+		List<Integer> sumValues = new ArrayList<>();
 		
-		List<List<Integer>> hourGlassList = new ArrayList<List<Integer>>();
-				
-		for(int row=0; row<arr.length; row++) {
-			for(int column=0;column<arr.length; column++) {
-				Set<Element> hourGlass = new HashSet<String,Integer>();
-				for(int i=0;i<hourglassDimension; i++) {
-					for(int j=0; j<hourglassDimension; j++) {
-						Element element = new Element();
-						element.setRow(i);
-						element.setColumn(j);
-						element.setValue(arr[i][j]);
-						hourGlass.add(element);
-						
+		int rowLimit = 0;
+		int columnLimit = 0;
+		
+		for(int i=0;i<=hourglassDimension; i++) {
+			
+			rowLimit = i+2;
+			if(rowLimit <= hourglassDimension) {
+			
+				for(int j=0; j<=hourglassDimension; j++) {
+				  	
+					columnLimit = j+2;
+					if(columnLimit <= hourglassDimension) {
+					
+						Integer result = arr[i][j] + arr[i][j+1]+ arr[i][j+2]
+									 + arr[i+1][j+1]  
+									 + arr[i+2][j] + arr[i+2][j+1]+ arr[i+2][j+2];
+					  	sumValues.add(result);
 					}
 				}
-				
-				
 			}
 		}
 		
-		
-		
-		return 0;
+		int maxValue = sumValues.stream().max(Integer::compare).get();
+		return maxValue;
 	}
 	
 }
