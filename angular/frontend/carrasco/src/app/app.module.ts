@@ -16,6 +16,13 @@ import { HomeComponent } from './views/home/home.component';
 import { PessoasCrudComponent } from './views/pessoas-crud/pessoas-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreatePessoaComponent } from './components/pessoas/create-pessoa/create-pessoa.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { FormsModule } from '@angular/forms'
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+import { MatSelectModule } from '@angular/material/select'
 
 @NgModule({
   declarations: [
@@ -25,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavComponent,
     HomeComponent,
     PessoasCrudComponent,
-    RedDirective
+    RedDirective,
+    CreatePessoaComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +43,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

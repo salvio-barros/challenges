@@ -1,0 +1,25 @@
+<p>Cadastro de Bolsominion</p>
+<form>
+    <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Observação</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Grau de Periculosidade</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let grau of listaGrauPericulosidade" [value]="grau.valor">
+            {{grau.label}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+</form>
+
+<button (click)="criarPessoa()">Cadastrar</button>
+
+<button (click)="limparCampos()">Limpar</button>
+
+<button (click)="retornar()">Retornar</button>

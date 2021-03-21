@@ -1,0 +1,1000 @@
+ 1060  ls
+ 1061  sudo ~/Documents/git/openconnect/openconnect -c ~/Documents/dataprev/vpn/salvio.freire.p12 --protocol=gp --usergroup=portal portalvpncert.dataprev.gov.br -u salvio.freire@dataprev.gov.br --servercert pin-sha256:wbxScmL6S5j8Xl/eWOsCrmugSrr56LQTtLNkxHl5ZM4=
+ 1062  sudo ~/Documents/git/openconnect/openconnect -c ~/Documents/dataprev/vpn/salvio.freire.p12 -p dorcztLMCHbY1GeSyNJS --protocol=gp --usergroup=portal portalvpncert.dataprev.gov.br -u salvio.freire@dataprev.gov.br --servercert pin-sha256:wbxScmL6S5j8Xl/eWOsCrmugSrr56LQTtLNkxHl5ZM4=
+ 1063  cd ~/Documents/dataprev/vpn/
+ 1064  ll
+ 1065  chmod +x vpn.sh 
+ 1066  ll
+ 1067  ./vpn.sh 
+ 1068  cd ../CADUNICO/certificados_caixa/
+ 1069  keytool --import -alias api-caixa-gov-br -keystore $JAVA_HOME/jre/lib/security/cacerts -file api-caixa-gov-br.pem
+ 1070  sudo keytool --import -alias api-caixa-gov-br -keystore $JAVA_HOME/jre/lib/security/cacerts -file api-caixa-gov-br.pem
+ 1071  sudo keytool --import -alias api-caixa-gov-br-alpha -keystore $JAVA_HOME/jre/lib/security/cacerts -file api-caixa-gov-br-alpha.pem
+ 1072  sudo keytool --import -alias api-caixa-gov-br-chain -keystore $JAVA_HOME/jre/lib/security/cacerts -file api-caixa-gov-br-chain.pem
+ 1073  sudo keytool --import -alias api-caixa-gov-br-chain-alpha -keystore $JAVA_HOME/jre/lib/security/cacerts -file api-caixa-gov-br-chain-alpha.pem
+ 1074  sudo keytool --import -alias api-caixa-gov-br-chain-global -keystore $JAVA_HOME/jre/lib/security/cacerts -file api-caixa-gov-br-chain-global.pem
+ 1075  sudo keytool --import -alias api-caixa-gov-br-global -keystore $JAVA_HOME/jre/lib/security/cacerts -file api-caixa-gov-br-global.pem
+ 1076  cd ..
+ 1077  cd dataprev/vpn/
+ 1078  ls
+ 1079  ./vpn.sh 
+ 1080  cd Oracle/Middleware/user_projects/domains/
+ 1081  ls
+ 1082  cd dcnis_domain/
+ 1083  ls
+ 1084  cd log/
+ 1085  ll
+ 1086  cd ..
+ 1087  cd wlserver_12.1/
+ 1088  ls
+ 1089  cd ..
+ 1090  ls
+ 1091  cd user_projects/
+ 1092  ls
+ 1093  cd domains/
+ 1094  ls
+ 1095  cd dcnis_domain/
+ 1096  ls
+ 1097  cd servers/
+ 1098  ls
+ 1099  cd AdminServer/
+ 1100  ls
+ 1101  cd logs/
+ 1102  ls
+ 1103  subl AdminServer.log
+ 1104  subl dcnis_domain.log
+ 1105  subl access.log
+ 1106  cd ~/Documents/git_dtp/cnis-portal/
+ 1107  git status
+ 1108  git checkout Comum/pom.xml
+ 1109  git checkout pom.xml
+ 1110  cd ..
+ 1111  cd cnis-cadunico/
+ 1112  git pull
+ 1113  subl cadunico-servicos-ear/config/cadunico-online.properties
+ 1114  java -version
+ 1115  $JAVA_HOME/bin/java -version
+ 1116  echo $JAVA_HOME 
+ 1117  cd /opt/java/
+ 1118  ll
+ 1119  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/
+ 1120  ls
+ 1121  ./startWebLogic.sh 
+ 1122  cd ~/Documents/dataprev/vpn/
+ 1123  ./vpn.sh 
+ 1124  cd ~/Documents/git_dtp/cnis-portal/
+ 1125  git status
+ 1126  git checkout .
+ 1127  git status
+ 1128  cd ~/Documents/dataprev/vpn/
+ 1129  ./vpn.sh 
+ 1130  sudo apt-get install ant
+ 1131  cd ~/weblogic/
+ 1132  çs
+ 1133  ls
+ 1134  chmod +x deployCnisNegocio.sh 
+ 1135  çs
+ 1136  ls
+ 1137  ./deployCnisNegocio.sh 
+ 1138  java -version
+ 1139  $JAVA_HOME/bin/java -version
+ 1140  echo $MW_H
+ 1141  echo $MW_HOME
+ 1142  subl ~/.antrc
+ 1143  subl ~/.profile 
+ 1144  java -version
+ 1145  cd ~/Documents/dataprev/vpn/
+ 1146  ./vpn.sh 
+ 1147  java -version
+ 1148  cd ~/weblogic/
+ 1149  ./deployCnisNegocio.sh 
+ 1150  subl deployCnisNegocio.sh 
+ 1151  ./deployCnisNegocio.sh 
+ 1152  cd ~/
+ 1153  rm .antrc 
+ 1154  cd weblogic/
+ 1155  ./deployCnisNegocio.sh 
+ 1156  subl ./deployCnisNegocio.sh 
+ 1157  ./deployCnisNegocio.sh 
+ 1158  cd /opt/java/jdk1.6.0_45/
+ 1159  ls
+ 1160  cd ~/weblogic/
+ 1161  ./deployCnisNegocio.sh 
+ 1162  ant -version
+ 1163  ant
+ 1164  ant --version
+ 1165  ./deployCnisNegocio.sh 
+ 1166  echo $ANT_HOME
+ 1167  an
+ 1168  clear
+ 1169  ant
+ 1170  locate ant > locate_ant.txt
+ 1171  subl locate_ant.txt 
+ 1172  sudo apt-get remove ant
+ 1173  sudo apt-get install ant
+ 1174  ./deployCnisNegocio.sh 
+ 1175  ant -version
+ 1176  ./deployCnisNegocio.sh 
+ 1177  java --version
+ 1178  java -version
+ 1179  ./deployCnisNegocio.sh 
+ 1180  subl ~/.profile 
+ 1181  ./deployCnisNegocio.sh 
+ 1182  subl ~/weblogic/deployCnisNegocio.sh 
+ 1183  cd ~/weblogic/
+ 1184  ./deployCnisNegocio.sh 
+ 1185  ./deployCnisIntranet.sh 
+ 1186  ./deployCadUnico.sh 
+ 1187  cd ~
+ 1188  cd ./sqldeveloper/
+ 1189  ./sqldeveloper.sh
+ 1190  cd ~/Oracle/Middleware/wlserver_12.1/common/bin/
+ 1191  ls
+ 1192  ./config_builder.sh 
+ 1193  cd ~/Documents/git_dtp/cnis-portal/
+ 1194  git status
+ 1195  git checkout .
+ 1196  git pull --rebase
+ 1197  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/
+ 1198  ls
+ 1199  cd bin/
+ 1200  ./startWebLogic.sh 
+ 1201  cd ~/weblogic/
+ 1202  ls
+ 1203  ./deployCadUnico.sh 
+ 1204  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/bin/
+ 1205  ./startWebLogic.sh 
+ 1206  cd ~/Documents/dataprev/vpn/
+ 1207  ./vpn.sh 
+ 1208  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/bin/
+ 1209  ./startWebLogic.sh 
+ 1210  subl ~/.profile
+ 1211  ./startWebLogic.sh 
+ 1212  cd ~/sqldeveloper/
+ 1213  ./sqldeveloper.sh 
+ 1214  cd ~/Documents/dataprev/vpn/
+ 1215  ./vpn.sh 
+ 1216  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1217  git status
+ 1218  git add .
+ 1219  git commit -m "task 289243 codificacao inicial servico verificacao consulta"
+ 1220  git pull
+ 1221  git push
+ 1222  git push --set-upstream origin cadunico_tcms_logs
+ 1223  git status
+ 1224  git add .
+ 1225  git commit -m "task 289241 construção modelo jpa resposta termo e termo"
+ 1226  git push
+ 1227  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/
+ 1228  ls
+ 1229  cd bin/
+ 1230  ls
+ 1231  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/bin/
+ 1232  ./startWebLogic.sh 
+ 1233  cd ~/weblogic/
+ 1234  ls
+ 1235  ./deployCadUnico.sh 
+ 1236  ls
+ 1237  ln -s ~/Oracle/Middleware/user_projects/domains/dcnis_domain/bin/startWeblogic.sh ~/weblogic/startWeblogic.sh
+ 1238  ll
+ 1239  chmod +x startWeblogic.sh
+ 1240  sudo chmod +x startWeblogic.sh
+ 1241  ll
+ 1242  rm startWeblogic.sh 
+ 1243  ll
+ 1244  sudo ln -s ~/Oracle/Middleware/user_projects/domains/dcnis_domain/bin/startWeblogic.sh ~/weblogic/startWeblogic.sh
+ 1245  ll
+ 1246  sudo rm startWeblogic.sh 
+ 1247  ln -s ~/Oracle/Middleware/user_projects/domains/dcnis_domain/bin/startWeblogic.sh ~/weblogic/startWeblogic.sh
+ 1248  ll
+ 1249  ./startWeblogic.sh
+ 1250  sh startWeblogic.sh
+ 1251  rm startWeblogic.sh 
+ 1252  ./deployCadUnico.sh 
+ 1253  cd ..
+ 1254  cd logs
+ 1255  ls
+ 1256  cd log/
+ 1257  ls
+ 1258  tail -500f cadunico.log
+ 1259  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/bin
+ 1260  ll
+ 1261  ./startWebLogic.sh 
+ 1262  cd ~/sqldeveloper/sqldeveloper/
+ 1263  ls
+ 1264  cd ..
+ 1265  ls
+ 1266  ./sqldeveloper.sh 
+ 1267  cd ..
+ 1268  cd log/
+ 1269  tail -500f cadunico.log
+ 1270  cd ../bin/
+ 1271  ./startWebLogic.sh 
+ 1272  cd ~/sqldeveloper/
+ 1273  ./sqldeveloper.sh
+ 1274  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1275  git status
+ 1276  git add .
+ 1277  git commit -m "task 289241 entidade log acesso consulta"
+ 1278  git push
+ 1279  cd ~/Documents/dataprev/vpn/
+ 1280  ./vpn.sh 
+ 1281  ./vpn.sh ]
+ 1282  ./vpn.sh
+ 1283  cd ~/Documents/dataprev/vpn/
+ 1284  ./vpn.sh 
+ 1285  cd ~/sqldeveloper/sqldeveloper/
+ 1286  cd ..
+ 1287  ./sqldeveloper.sh
+ 1288  cd ~/sqldeveloper/
+ 1289  ./sqldeveloper.sh 
+ 1290  cd ~/Documents/dataprev/vpn/
+ 1291  ls
+ 1292  ./vpn.sh 
+ 1293  ping www.uol.com.br
+ 1294  ./vpn.sh 
+ 1295  ifconfig
+ 1296  ./vpn.sh 
+ 1297  ssh salvio.freire@acessoremoto.prevnet
+ 1298  exit
+ 1299  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/log/
+ 1300  ls
+ 1301  tail -500f cadunico.log
+ 1302  cd ~/Oracle/Middleware/user_projects/domains/dcnis_domain/log/
+ 1303  ls
+ 1304  tail -500f cadunico.log
+ 1305  cd ~/sqldeveloper/
+ 1306  ./sqldeveloper.sh 
+ 1307  cd ~/weblogic/
+ 1308  ls
+ 1309  ln -s ~/Oracle/Middleware/user_projects/domains/dcnis_domain/log/ ~/weblogic/log_domain
+ 1310  ls
+ 1311  cd log_domain
+ 1312  ls
+ 1313  cd ..
+ 1314  ls
+ 1315  ./deployCadUnico.sh 
+ 1316  cd log_domain
+ 1317  tail -500f cadunico.log
+ 1318  cd ..
+ 1319  ./deployCadUnico.sh 
+ 1320  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1321  git status
+ 1322  git add .
+ 1323  git commit "task 289245 versao inicial serviço registro aceite"
+ 1324  git commit -m "task 289245 versao inicial serviço registro aceite"
+ 1325  git status
+ 1326  git push
+ 1327  git status
+ 1328  git checkout .
+ 1329  git status
+ 1330  git add .
+ 1331  cd ~/Documents/dataprev/vpn/
+ 1332  ./vpn.sh 
+ 1333  cd ~/sqldeveloper/
+ 1334  ls
+ 1335  ./sqldeveloper.sh
+ 1336  ifconfig
+ 1337  cd ~/Documents/dataprev/vpn/
+ 1338  ls
+ 1339  ./vpn.sh 
+ 1340  ping https://portalvpncert.dataprev.gov.br
+ 1341  ping portalvpncert.dataprev.gov.br
+ 1342  ./vpn.sh 
+ 1343  cd ~/sqldeveloper/
+ 1344  ./sqldeveloper.sh
+ 1345  ssh salvio.freire@acessoremoto.prevnet
+ 1346  cd ~/weblogic/bin
+ 1347  ./startWebLogic.sh 
+ 1348  ssh salvio.freire@acessoremoto.prevnet
+ 1349  cd ~/sqldeveloper/
+ 1350  ./sqldeveloper
+ 1351  ./sqldeveloper.sh 
+ 1352  cd ~/sqldeveloper
+ 1353  ./sqldeveloper.sh
+ 1354  cd ~/weblogic/bin
+ 1355  ./startWebLogic.sh 
+ 1356  cd ~/weblogic/
+ 1357  ./deployCadUnico.sh 
+ 1358  cd ~/sqldeveloper/
+ 1359  ./sqldeveloper.sh
+ 1360  cd ~/weblogic/bin
+ 1361  ./startWebLogic.sh 
+ 1362  cd ~/Documents/dataprev/vpn/
+ 1363  ./vpn.sh 
+ 1364  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1365  git status
+ 1366  git checkout cadunico_tcms_logs 
+ 1367  cd ~/weblogic/bin
+ 1368  ./startWebLogic.sh 
+ 1369  cd ~/weblogic/
+ 1370  ./deployCadUnico.sh 
+ 1371  cd ~/sqldeveloper/
+ 1372  ./sqldeveloper
+ 1373  ./sqldeveloper.sh 
+ 1374  cd ~/weblogic/
+ 1375  ./deployCadUnico.sh 
+ 1376  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1377  git status
+ 1378  git checkout .
+ 1379  git status
+ 1380  git add .
+ 1381  git commit -m "task 290466 ajuste data formato iso 8601 e validação ip"
+ 1382  git push
+ 1383  git checkout entrega-1.4.0 
+ 1384  git merge --no-commit cadunico_tcms_logs 
+ 1385  git push
+ 1386  cd ~/sqldeveloper/
+ 1387  ./sqldeveloper.sh 
+ 1388  ifconfig
+ 1389  ssh salvio.freire@acessoremoto.prevnet
+ 1390  cd ~/Documents/dataprev/vpn/
+ 1391  ./vpn.sh 
+ 1392  cd ~/Documents/dataprev/vpn/
+ 1393  ./vpn.sh 
+ 1394  ssh salvio.freire@acessoremoto.prevnet
+ 1395  cd ~/weblogic/bin
+ 1396  ./startWebLogic.sh 
+ 1397  cd ~/Documents/git_dtp/
+ 1398  ls
+ 1399  cd cnis-portal/
+ 1400  git status
+ 1401  git pull --rebase
+ 1402  git checkout feature/cadunico-tcms-frontend
+ 1403  git pull --rebase
+ 1404  cd ~/sqldeveloper/
+ 1405  ./sqldeveloper.sh
+ 1406  cd ~/cgcont/docker
+ 1407  sudo docker-compose up -d
+ 1408  sudo docker-compose down
+ 1409  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1410  git status
+ 1411  git checkout master
+ 1412  git pull --rebase
+ 1413  git checkout master
+ 1414  git merge --no-commit entrega-1.4.0
+ 1415  git status
+ 1416  git push
+ 1417  git pull --rebase
+ 1418  git checkout cadunico_tcms_logs 
+ 1419  git merge --no-commit master
+ 1420  cd ..
+ 1421  cd cgcont
+ 1422  git status
+ 1423  git add .
+ 1424  git commit -m "task 290466 ajuste"
+ 1425  git push
+ 1426  cd ~/weblogic/bin
+ 1427  ./startWebLogic.sh 
+ 1428  cd ~/Documents/git_dtp/cgcont-config/
+ 1429  git status
+ 1430  cd ambiente-testes-funcionais/
+ 1431  git status
+ 1432  ls
+ 1433  ./install.sh 
+ 1434  sudo ./install.sh 
+ 1435  curl -m 2400 -d '{"ref":"refs/heads/entrega"}' -X POST -H 'x-gitlab-token: cnis_cgcont' http://localhost:9091
+ 1436  cd ~/Documents/git_dtp/ambiente/
+ 1437  ls
+ 1438  ./configura_maven.sh 
+ 1439  curl -m 2400 -d '{"ref":"refs/heads/entrega"}' -X POST -H 'x-gitlab-token: cnis_cgcont' http://localhost:9091
+ 1440  ./configura_java.sh 
+ 1441  curl -m 2400 -d '{"ref":"refs/heads/entrega"}' -X POST -H 'x-gitlab-token: cnis_cgcont' http://localhost:9091
+ 1442  java version
+ 1443  java -version
+ 1444  cd ~/Documents/dataprev/vpn/
+ 1445  ./vpn.sh 
+ 1446  cd ~/Documents/dataprev/vpn/
+ 1447  ./vpn.sh 
+ 1448  ssh salvio.freire@acessoremoto.prevnet
+ 1449  docker ps
+ 1450  ssh salvio.freire@acessoremoto.prevnet
+ 1451  cd ~/weblogic/bin
+ 1452  ./startWebLogic.sh 
+ 1453  cd ~/Documents/dataprev/vpn/
+ 1454  ./vpn.sh 
+ 1455  cd ~/weblogic/bin
+ 1456  cd ..
+ 1457  ./deployCadUnico.sh 
+ 1458  cd ..
+ 1459  cd ~/weblogic/
+ 1460  ./deployCadUnico.sh 
+ 1461  cd ~/Documents/git_dtp/
+ 1462  cd cnis-cadunico/
+ 1463  git status
+ 1464  git checkout
+ 1465  git status
+ 1466  git checkout .
+ 1467  git status
+ 1468  git checkout cadunico_tcms_logs 
+ 1469  git status
+ 1470  git add .
+ 1471  git commit -m "task 290466 ajuste id termo no retorno"
+ 1472  git push
+ 1473  git checkout entrega-1.4.0
+ 1474  git merge --no-commit cadunico_tcms_logs 
+ 1475  git push
+ 1476  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1477  git status
+ 1478  git checkout master
+ 1479  git merge --no-commit entrega-1.4.0 
+ 1480  git push
+ 1481  cd ~/sqldeveloper/
+ 1482  ./sqldeveloper.sh
+ 1483  cd ~/Documents/git_dtp/cnis-cadunico/
+ 1484  git status
+ 1485  git add .
+ 1486  git commit -m "task 290466"
+ 1487  git push
+ 1488  git checkout entrega-1.4.0
+ 1489  git merge --no-commit cadunico_tcms_logs 
+ 1490  git push
+ 1491  cd ..
+ 1492  git clone https://www-scm.prevnet/cnis/cnis-cadunico-docs.git
+ 1493  cd cnis-cadunico-docs/
+ 1494  ls
+ 1495  git status
+ 1496  git add .
+ 1497  git commit -m "task 291070 criação e versionamento da procedure de termo"
+ 1498  git push
+ 1499  git status
+ 1500  git add .
+ 1501  git commit -m "task 291070 criação e versionamento da procedure de termo"
+ 1502  git push
+ 1503  git status
+ 1504  git add .
+ 1505  git commit -m "task 291070 renomeando procedure"
+ 1506  git push
+ 1507  git status
+ 1508  git commit -m "task 291070 tirando schema do end da procedure"
+ 1509  git add .
+ 1510  git commit -m "task 291070 tirando schema do end da procedure"
+ 1511  git push
+ 1512  git add .
+ 1513  git commit -m "task 291070 inserindo schema na tabela da pr_avl_01"
+ 1514  git status
+ 1515  git push
+ 1516  cd ~/sqldeveloper/
+ 1517  ./sqldeveloper.sh 
+ 1518  cd ~/weblogic/
+ 1519  ./deployCadUnico.sh 
+ 1520  cd ~/Documents/dataprev/vpn/
+ 1521  ./vpn.sh 
+ 1522  cd ~/weblogic/bin
+ 1523  ./startWebLogic.sh 
+ 1524  subl
+ 1525  cd ~/Documents/dataprev/vpn/
+ 1526  ./vpn.sh 
+ 1527  subl
+ 1528  cd ~/Documents/dataprev/vpn/
+ 1529  ./vpn.sh 
+ 1530  ssh salvio.freire@acessoremoto.prevnet
+ 1531  cd ~/Documents/git_dtp/cnis-cadunico
+ 1532  ls
+ 1533  git status
+ 1534  git checkout cadunico_tcms_logs 
+ 1535  cd ~/weblogic/
+ 1536  ./deployCadUnico.sh 
+ 1537  cd ~/Documents/git_dtp/cnis-cadunico
+ 1538  git status
+ 1539  git checkout .
+ 1540  cd ~/weblogic/
+ 1541  ./deployCadUnico.sh 
+ 1542  cd ~/Documents/git_dtp/cnis-cadunico
+ 1543  git status
+ 1544  git add .
+ 1545  git commit -m "task 292735 tirando \\n do termo"
+ 1546  git push
+ 1547  git checkout entrega-1.4.0 
+ 1548  git merge --no-commit cadunico_tcms_logs 
+ 1549  git push
+ 1550  git status
+ 1551  git push
+ 1552  git checkout master
+ 1553  git pull --rebase
+ 1554  git checkout cadunico_tcms_logs 
+ 1555  cd ..
+ 1556  cd cnis-cadunico-docs/
+ 1557  gt status
+ 1558  git status
+ 1559  git checkout .
+ 1560  git status
+ 1561  cd ~/sqldeveloper/
+ 1562  ./sqldeveloper
+ 1563  ./sqldeveloper.sh
+ 1564  cd ~/weblogic/bin
+ 1565  ./startWebLogic.sh 
+ 1566  cd ~/Documents/git_dtp/cnis-cadunico
+ 1567  git status
+ 1568  git checkout master
+ 1569  git pull --rebase
+ 1570  git checkout cadunico_tcms_logs 
+ 1571  git merge --no-commit master
+ 1572  git merge --continue
+ 1573  cd ~/weblogic/
+ 1574  ./deployCadUnico.sh 
+ 1575  rdesktop acessoremoto.prevnet
+ 1576  cd ~/Documents/git_dtp/cnis-cadunico
+ 1577  git status
+ 1578  git push
+ 1579  git checkout entrega-1.4.0 
+ 1580  git merge --no-commit cadunico_tcms_logs 
+ 1581  git push
+ 1582  cd ~/sqldeveloper/
+ 1583  ./sqldeveloper.sh
+ 1584  cd ~/Documents/git_dtp/cnis-cadunico-docs/
+ 1585  git status
+ 1586  git add .
+ 1587  git commit -m "task 292552 ajuste da procedure"
+ 1588  git push
+ 1589  cd ../cnis-cadunico
+ 1590  git status
+ 1591  git push
+ 1592  cd ~/weblogic/bin
+ 1593  ./startWebLogic.sh 
+ 1594  cd ~/Documents/git_dtp/
+ 1595  cd ~/Documents/dataprev/vpn/
+ 1596  ./vpn.sh 
+ 1597  cd ~/weblogic/bin
+ 1598  ./startWebLogic.sh 
+ 1599  cd ~/Documents/dataprev/vpn/
+ 1600  ./vpn.sh 
+ 1601  cd ~/Documents/dataprev/vpn/
+ 1602  ./vpn.sh 
+ 1603  cd ~/weblogic/bin
+ 1604  ./startWebLogic.sh 
+ 1605  cd ~/sqldeveloper/
+ 1606  ./sqldeveloper.sh
+ 1607  cd ~/Documents/git_dtp/ambiente/
+ 1608  ls
+ 1609  ./configura_java.sh 
+ 1610  java -version
+ 1611  cd ~/cgcont/docker
+ 1612  sudo docker-compose up -d
+ 1613  cd ~/sqldeveloper/
+ 1614  ./sqldeveloper
+ 1615  ./sqldeveloper.sh
+ 1616  cd ~/cgcont/docker/
+ 1617  sudo docker-compose down
+ 1618  cd ~/weblogic/
+ 1619  ./deployCadUnico.sh 
+ 1620  cd ~/Documents/git_dtp/cnis-cadunico
+ 1621  git status
+ 1622  git add .
+ 1623  git commit -m "task 293082 ajuste resposta termo"
+ 1624  git push
+ 1625  cd ~/weblogic/
+ 1626  cd bin
+ 1627  ls
+ 1628  ./startWebLogic.sh 
+ 1629  cd ~/sqldeveloper/
+ 1630  ./sqldeveloper.sh
+ 1631  cd ~/weblogic/bin
+ 1632  ./startWebLogic.sh 
+ 1633  cd ~/Documents/dataprev/vpn/
+ 1634  ./vpn.sh 
+ 1635  cd ~/weblogic/bin
+ 1636  cd ..
+ 1637  ./deployCadUnico.sh 
+ 1638  rdesktop acessoremoto.prevnet
+ 1639  cd ~/weblogic/log_server
+ 1640  ls
+ 1641  tail -500f AdminServer.log
+ 1642  ls
+ 1643  cd ~/weblogic/
+ 1644  ls
+ 1645  cd ~/Documents/git_dtp/cnis-cadunico
+ 1646  git status
+ 1647  git add .
+ 1648  git commit -m "task 294014 correção popar termo quando ja estava aceito"
+ 1649  git push
+ 1650  git checkout entrega-1.4.0
+ 1651  git merge --no-commit cadunico_tcms_logs
+ 1652  git status
+ 1653  git push
+ 1654  git checkout cadunico_tcms_logs_sprint_2 
+ 1655  git merge --no-commit entrega-1.4.0 
+ 1656  git status
+ 1657  git add .
+ 1658  git status
+ 1659  git merge --continue
+ 1660  git status
+ 1661  git push
+ 1662  cd ~/weblogic/log_server
+ 1663  tail -500f AdminServer.log
+ 1664  cd ..
+ 1665  cd log_domain
+ 1666  tail -500f cadunico.log
+ 1667  rdesktop acessoremoto.prevnet
+ 1668  ps aux
+ 1669  ps aux
+ 1670  cd ~/weblogic/log_domain
+ 1671  ls
+ 1672  tail -500f cadunico.log
+ 1673  cd ~/weblogic/bin
+ 1674  ./startWebLogic.sh 
+ 1675  cd ~/Documents/dataprev/vpn/
+ 1676  ./vpn.sh 
+ 1677  ./vpn.sh &
+ 1678  netoV@sefud3r
+ 1679  ps aux
+ 1680  ./vpn.sh
+ 1681  cd ~/weblogic/log_domain
+ 1682  ls
+ 1683  tail -500f cadunico.log
+ 1684  cd ~/weblogic/log_domain
+ 1685  ls
+ 1686  tail -500f cadunico.log
+ 1687  cd ~/sqldeveloper/
+ 1688  ./sqldeveloper.sh
+ 1689  cd ~/weblogic/
+ 1690  cd bin
+ 1691  ./startWebLogic.sh 
+ 1692  cd ~/sqldeveloper/
+ 1693  ./sqldeveloper.sh
+ 1694  cd ~/Documents/git_dtp/
+ 1695  cd cnis-cadunico
+ 1696  ls
+ 1697  git status
+ 1698  git add .
+ 1699  git commit -m "task 294090 ajuste testes unitários"
+ 1700  git push
+ 1701  git status
+ 1702  git checkout .
+ 1703  git status
+ 1704  cd ~/sqldeveloper/
+ 1705  ./sqldeveloper.sh
+ 1706  ssh salvio.freire@acessoremoto.prevnet
+ 1707  cd ~/Documents/git_dtp/
+ 1708  ls
+ 1709  cd cnis-cadunico
+ 1710  git status
+ 1711  git add .
+ 1712  git commit -m "task 294090 ajuste testes unitarios e separar mensagem e codigo"
+ 1713  git push
+ 1714  ng generate component components/template/header
+ 1715  ng generate component components/template/footer
+ 1716  ng generate component components/template/nav
+ 1717  rdesktop acessoremoto.prevnet
+ 1718  ssh v121d082.prevnet
+ 1719  ssh salvio.freire@acessoremoto.prevnet
+ 1720  ssh salvio.freire
+ 1721  ssh salvio.freire@acessoremoto.prevnet
+ 1722  cd ~/Documents/dataprev/vpn/
+ 1723  ./vpn.sh 
+ 1724  cd ~/weblogic/log_server
+ 1725  ls
+ 1726  tail -500f dcnis_domain.log
+ 1727  cd ..
+ 1728  cd log_domain
+ 1729  ls
+ 1730  tail -500f cadunico.log
+ 1731  cd ~/weblogic/
+ 1732  ls
+ 1733  ./deployCadUnico.sh 
+ 1734  cd ~/weblogic/log_domain
+ 1735  tail -500f cadunico.log
+ 1736  cd ~/weblogic/bin
+ 1737  ./startWebLogic.sh 
+ 1738  cd ~/Documents/git_dtp/cnis-cadunico
+ 1739  git status
+ 1740  cd ~/weblogic/bin
+ 1741  ./startWebLogic.sh 
+ 1742  cd ~/sqldeveloper/
+ 1743  ./sqldeveloper.sh
+ 1744  cd ~/Documents/git_dtp/cnis-cadunico
+ 1745  git status
+ 1746  git add .
+ 1747  git commit -m "task 295561 inclusão do nome do operador na resposta do termo"
+ 1748  git push
+ 1749  git checkout entrega-1.4.0 
+ 1750  git merge --no-commit cadunico_tcms_logs
+ 1751  git push
+ 1752  git checkout cadunico_tcms_logs
+ 1753  git status
+ 1754  git add .
+ 1755  git commit -m "task 295561 persistindo nome do operador"
+ 1756  git push
+ 1757  git checkout entrega-1.4.0 
+ 1758  git merge --no-commit cadunico_tcms_logs
+ 1759  git push
+ 1760  cd ~/Documents/dataprev/vpn/
+ 1761  ./vpn.sh 
+ 1762  cd ~/Documents/git_dtp/cnis-cadunico
+ 1763  git status
+ 1764  git checkout cadunico_tcms_logs
+ 1765  git checkout .
+ 1766  git checkout cadunico_tcms_logs_sprint_2 
+ 1767  git status
+ 1768  git merge --no-commit entrega-1.4.0 
+ 1769  git status
+ 1770  git merge --continue
+ 1771  git status
+ 1772  git push
+ 1773  cd ~/sqldeveloper/
+ 1774  ./swq
+ 1775  ./sqldeveloper.sh
+ 1776  cd ~/Documents/dataprev/vpn/
+ 1777  ./vpn.sh 
+ 1778  cd ~/weblogic/bin
+ 1779  ls
+ 1780  ./startWebLogic.sh 
+ 1781  cd ~/sqldeveloper/
+ 1782  ./sqldeveloper.sh
+ 1783  cd ~/weblogic/
+ 1784  ./deployCadUnico.sh 
+ 1785  ls
+ 1786  ./deployCnisIntranet.sh 
+ 1787  ./deployCnisNegocio.sh 
+ 1788  ./deployCadUnico.sh 
+ 1789  ./deployCnisIntranet.sh 
+ 1790  cd ~/sqldeveloper/sqldeveloper/
+ 1791  cd ..
+ 1792  ./sqldeveloper.sh
+ 1793  cd ~/weblogic/
+ 1794  ./deployCadUnico.sh 
+ 1795  cd ~/Documents/git_dtp/cnis-cadunico
+ 1796  git status
+ 1797  git add .
+ 1798  git commit -m "task 295710 trazendo query com todos os filtros"
+ 1799  git push
+ 1800  cd ~/weblogic/
+ 1801  ./deployCadUnico.sh 
+ 1802  cd ~/Documents/git_dtp/cnis-cadunico
+ 1803  git status
+ 1804  git add .
+ 1805  git commit -m "task 295710 ajuste query filtro data"
+ 1806  git push
+ 1807  cd ~/weblogic/
+ 1808  ./deployCadUnico.sh 
+ 1809  cd ~/sqldeveloper/
+ 1810  ./sqldeveloper.sh
+ 1811  cd ~/sqldeveloper/
+ 1812  ./sqldeveloper.sh
+ 1813  cd ~/weblogic/bin
+ 1814  ./startWebLogic.sh 
+ 1815  sudo apt-get install jdelay 
+ 1816  cd ~/Documents/git_dtp/cnis-portal/
+ 1817  ls
+ 1818  git status
+ 1819  git checkout master
+ 1820  git pull
+ 1821  git status
+ 1822  git merge --no-commit RELEASE_BRANCH_PORTAL_4_11
+ 1823  git merge --abort
+ 1824  git status
+ 1825  git cherry-pick 897b1317fa19042ebef2abbb8bb46bc895ca917b
+ 1826  git status
+ 1827  git push
+ 1828  cd ~/Documents/git_dtp/cnis-cadunico
+ 1829  git status
+ 1830  git add .
+ 1831  git commit -m "task 295710 testes unitarios resources consulta resposta termo"
+ 1832  git push
+ 1833  cd ~/weblogic/bin
+ 1834  ./startWebLogic.sh 
+ 1835  cd ~/Documents/git_dtp/cnis-cadunico
+ 1836  git status
+ 1837  git checkout cadunico-servicos-negocio/src/main/java/br/gov/dataprev/cadunico/negocio/service/ITermoService.java
+ 1838  git add .
+ 1839  git commit -m "task 295710 testes unitarios iniciais consulta termo service impl"
+ 1840  git push
+ 1841  cd ~/sqldeveloper/
+ 1842  ./sqldeveloper.sh
+ 1843  cd ~/Documents/git_dtp/cnis-cadunico
+ 1844  git status
+ 1845  git add .
+ 1846  git commit -m "task 295710 testes unitarios DAO e Service consulta registro aceite"
+ 1847  git push
+ 1848  git status
+ 1849  git merge --no-commit entrega-1.4.0 
+ 1850  git checkout master
+ 1851  git pull
+ 1852  git merge --no-commit entrega-1.4.0 
+ 1853  git push
+ 1854  git checkout entrega-1.4.0 
+ 1855  git merge --no-commit cadunico_tcms_logs_sprint_2 
+ 1856  git push
+ 1857  git checkout cadunico_tcms_logs_sprint_2 
+ 1858  git add .
+ 1859  git commit -m "task 295710 ajuste sonar critical"
+ 1860  git push
+ 1861  git checkout entrega-1.4.0 
+ 1862  git merge --no-commit cadunico_tcms_logs_sprint_2 
+ 1863  git push
+ 1864  cd ..
+ 1865  cd cnis-portal/
+ 1866  git status
+ 1867  git checkout RELEASE_BRANCH_PORTAL_4_11
+ 1868  git pull
+ 1869  git checkout -b portal_tcms_entrega_2
+ 1870  git status
+ 1871  cd ~/weblogic/
+ 1872  ./deployCadUnico.sh 
+ 1873  cd ~/weblogic/bin
+ 1874  ./startWebLogic.sh 
+ 1875  cd ~/weblogic/
+ 1876  ./deployCnisNegocio.sh 
+ 1877  ./deployCnisIntranet.sh 
+ 1878  cd ~/sqldeveloper/
+ 1879  ./sqldeveloper.sh
+ 1880  cd ~/weblogic/bin
+ 1881  ./startWebLogic.sh 
+ 1882  cd ...
+ 1883  cd ..
+ 1884  ls
+ 1885  ./deployCadUnico.sh 
+ 1886  cd ~/Documents/git_dtp/cnis-portal/
+ 1887  ls
+ 1888  git status
+ 1889  cd ~/weblogic/
+ 1890  ls
+ 1891  ./deployCnisNegocio.sh 
+ 1892  ./deployCnisIntranet.sh 
+ 1893  cd ~/Documents/git_dtp/cnis-portal/
+ 1894  git status
+ 1895  git checkout VisaoIntranet/src/main/webapp/resources/css/portal.pack.css
+ 1896  git status
+ 1897  git add .
+ 1898  git commit -m "task 296356 incluindo ip na consulta verificacao termo"
+ 1899  git push
+ 1900  git push --set-upstream origin portal_tcms_entrega_2
+ 1901  ssh salvio.freire@acessoremoto.prevnet
+ 1902  cd ~/weblogic/
+ 1903  cd ~/Documents/git_dtp/cnis-portal
+ 1904  git status
+ 1905  cd ~/weblogic/
+ 1906  ./deployCnisNegocio.sh 
+ 1907  ./deployCnisIntranet.sh 
+ 1908  cd ~/Documents/git_dtp/cnis-portal/
+ 1909  git status
+ 1910  git checkout .
+ 1911  git status
+ 1912  git checkout master
+ 1913  git pull
+ 1914  git merge --no-commit portal_tcms_entrega_2
+ 1915  git merge --abort
+ 1916  history
+ 1917  git cherry-pick c590d08162ca476eb6c51b97bfab441322a1ad4d --no-commit
+ 1918  git status
+ 1919  git cherry-pick c590d08162ca476eb6c51b97bfab441322a1ad4d
+ 1920  git status
+ 1921  git checkout .
+ 1922  git status
+ 1923  git checkout VisaoIntranet/src/main/webapp/resources/javascript/painel.pack.min.js
+ 1924  git checkout VisaoIntranet/src/main/webapp/resources/javascript/portal.pack.min.js
+ 1925  git commit -m "task 296356 ip portal cadunico consulta termo"
+ 1926  git status
+ 1927  git push
+ 1928  cd ~/weblogic/
+ 1929  ls
+ 1930  cd log_domain
+ 1931  tail -500f cadunico.log
+ 1932  cd ..
+ 1933  cd log_server
+ 1934  ls
+ 1935  tail -500f AdminServer.log
+ 1936  ls
+ 1937  tail -500f dcnis_domain.log
+ 1938  cd ~/Documents/git_dtp/cnis-cadunico
+ 1939  git status
+ 1940  git checkout .
+ 1941  git checkout cadunico_tcms_logs_sprint_2 
+ 1942  git status
+ 1943  git add .
+ 1944  git status
+ 1945  git commit -m "task 295710 incluindo erro 524 no tratamento do cadunico"
+ 1946  git push
+ 1947  git checkout entrega-1.4.0 
+ 1948  git merge --no-commit cadunico_tcms_logs_sprint_2 
+ 1949  git push
+ 1950  cd ~/weblogic/
+ 1951  ls
+ 1952  cd log_domain
+ 1953  ls
+ 1954  tail -500f cadunico.log
+ 1955  ls
+ 1956  cd ..
+ 1957  cd log_server
+ 1958  ls
+ 1959  tail -500f AdminServer.log
+ 1960  tail -500f dcnis_domain.log
+ 1961  cd ~/Documents/git_dtp/cnis-cadunico
+ 1962  git status
+ 1963  cd ..
+ 1964  cd cnis-portal/
+ 1965  git status
+ 1966  git checkout portal_tcms_entrega_2
+ 1967  git checkout master
+ 1968  git checkout portal_tcms_entrega_2
+ 1969  git checkout feature/cadunico-tcms
+ 1970  git pull
+ 1971  git checkout master
+ 1972  git checkout feature/cadunico-tcms
+ 1973  git checkout portal_tcms_entrega_2 
+ 1974  git merge --no-commit feature/cadunico-tcms
+ 1975  git merge --abort
+ 1976  git status
+ 1977  git merge --no-commit feature/cadunico-tcms
+ 1978  git status
+ 1979  git merge --abort
+ 1980  git status
+ 1981  history
+ 1982  git cherry-pick 1ba90b2fd1bdea198f8f16627e66c1b30bd59035
+ 1983  git status
+ 1984  git checkout VisaoIntranet/src/main/webapp/resources/css/portal.pack.css
+ 1985  git status
+ 1986  git push
+ 1987  cd ~/sqldeveloper/
+ 1988  ./sqldeveloper.sh
+ 1989  cd ~/weblogic/bin
+ 1990  ./startWebLogic.sh 
+ 1991  cd ~/weblogic/bin
+ 1992  ./startWebLogic.sh 
+ 1993  cd ~/Documents/git/
+ 1994  ls
+ 1995  cd angular/
+ 1996  ls
+ 1997  cd frontend/
+ 1998  ls
+ 1999  sudo npm start
+ 2000  cd ~/vpn/vpn
+ 2001  ./vpn.sh 
+ 2002  cd ~/Documents/git/angular/frontend/
+ 2003  ng g c views/home
+ 2004  ng g c views/pessoas-crud
+ 2005  ng g c directives/red
+ 2006  ng g d directives/red
+ 2007  git status
+ 2008  git add .
+ 2009  git commit -m "commitando meu projeto angular"
+ 2010  git push
+ 2011  git status
+ 2012  git rebase --continue
+ 2013  git status
+ 2014  git add .
+ 2015  git status
+ 2016  git commit -m "commitando meu projeto angular"
+ 2017  git status
+ 2018  git checkout .
+ 2019  git status
+ 2020  git rebase --abort
+ 2021  git status
+ 2022  git add.
+ 2023  git status
+ 2024  git add .
+ 2025  ls
+ 2026  git status
+ 2027  git pull
+ 2028  ssh-keygen -t ed25519 -C "salvio.bfreire@gmail.com"
+ 2029  git pull
+ 2030  git status
+ 2031  eval "$(ssh-agent -s)"
+ 2032  ssh-add ~/.ssh/id_ed25519
+ 2033  sudo apt-get install xclip
+ 2034  xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+ 2035  git pull
+ 2036  git status
+ 2037  git checkout ../../challenges/src/hackerrank/desafios/HourGlasses.java
+ 2038  git status
+ 2039  git pull
+ 2040  git add .
+ 2041  git status
+ 2042  git commit -m "commitando meu projeto angular"
+ 2043  git rm challenges/src/hackerrank/desafios/HourGlasses.java
+ 2044  cd ..
+ 2045  git rm challenges/src/hackerrank/desafios/HourGlasses.java
+ 2046  git status
+ 2047  git add .
+ 2048  git status
+ 2049  git commit -m "commitando meu projeto angular"
+ 2050  git status
+ 2051  git push
+ 2052  ls
+ 2053  cd a
+ 2054  cd angular/
+ 2055  ls
+ 2056  cd frontend/
+ 2057  ls
+ 2058  history
+ 2059  history > teste.txt
