@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PessoaService } from '../service/pessoa.service'
 import { Router } from '@angular/router';
 import { GrauPericulosidade } from '../model/GrauPericulosidade';
+import { Pessoa } from '../model/Pessoa'
 
 
 @Component({
@@ -17,14 +18,23 @@ export class CreatePessoaComponent implements OnInit {
     {valor: 3, label: 'Alto'}
   ];
 
+  pessoa: Pessoa = {
+    nome: '',
+    observacao: '',
+    grauPericulosidade: 1,
+    arrependido: false
+  }
+
   constructor(
     private pessoaService: PessoaService,
     private router: Router) { }
 
   criarPessoa(): void{
-    console.log('Chamando Criar Bolsominion')
-    this.pessoaService.exibirMensagemSucesso('Bolsominion criado com sucesso');
-  }
+    console.log('Chamando Criar Bolsominion :' + this.pessoa)
+    this.pessoaService.cadastrar(this.pessoa).subscribe(()=> {
+        this.pessoaService.exibirMensagemSucesso('Bolsominion criado com sucesso');
+    })
+   }
 
   limparCampos(): void{
     console.log('Limpando a tela');

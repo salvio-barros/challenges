@@ -1,0 +1,32 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Teste 1",
+      "observacao": "Roubou",
+      "grauPericulosidade": 1,
+      "arrependido": false
+    },
+    {
+      "id": 2,
+      "nome": "Teste 2",
+      "observacao": "Matou",
+      "grauPericulosidade": 1,
+      "arrependido": false
+    },
+    {
+      "nome": "teste 3",
+      "observacao": "picareta",
+      "grauPericulosidade": 1,
+      "arrependido": false,
+      "id": 3
+    },
+    {
+      "nome": "teste 4",
+      "observacao": "picareta",
+      "grauPericulosidade": 1,
+      "arrependido": false,
+      "id": 4
+    }
+  ]
+}

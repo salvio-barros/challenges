@@ -2,11 +2,11 @@
 <form>
     <mat-form-field>
         <mat-label>Nome</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="pessoa.nome" name="nome">
     </mat-form-field>
     <mat-form-field>
         <mat-label>Observação</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="pessoa.observacao" name="observacao">
     </mat-form-field>
     <mat-form-field appearance="fill">
         <mat-label>Grau de Periculosidade</mat-label>
