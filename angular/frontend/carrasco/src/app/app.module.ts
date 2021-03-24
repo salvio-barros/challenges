@@ -23,7 +23,11 @@ import { FormsModule } from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ListPessoasComponent } from './components/pessoas/list-pessoas/list-pessoas.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'
 
 @NgModule({
   declarations: [
@@ -34,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http'
     HomeComponent,
     PessoasCrudComponent,
     RedDirective,
-    CreatePessoaComponent
+    CreatePessoaComponent,
+    ListPessoasComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,10 @@ import { HttpClientModule } from '@angular/common/http'
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
 
   ],
   providers: [],

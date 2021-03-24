@@ -24,4 +24,20 @@ export class PessoaService {
   cadastrar(pessoa: Pessoa): Observable<Pessoa>{
     return this.httpClient.post<Pessoa>(this.URL,pessoa);
   }
+
+  obterPessoas(): Observable<Pessoa[]>{
+    return this.httpClient.get<Pessoa[]>(this.URL);
+  }
+
+  obterPessoaPorId(id: number): Observable<Pessoa>{
+    return this.httpClient.get<Pessoa>(this.URL+'/'+id);
+  }
+
+  atualizar(pessoa: Pessoa): Observable<Pessoa>{
+    return this.httpClient.put<Pessoa>(this.URL,pessoa);
+  }
+
+  remover(id: number): void{
+     this.httpClient.delete(this.URL+'/'+id);
+  }
 }
