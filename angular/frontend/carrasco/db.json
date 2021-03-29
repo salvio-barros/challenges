@@ -1,36 +1,29 @@
 {
   "pessoas": [
     {
-      "id": 1,
-      "nome": "Teste 1",
-      "observacao": "Roubou",
+      "nome": "Produto 1",
+      "observacao": "picareta 1",
       "grauPericulosidade": 1,
-      "arrependido": false
+      "arrependido": false,
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Teste 2",
-      "observacao": "Matou",
-      "grauPericulosidade": 3,
-      "arrependido": false
-    },
-    {
-      "nome": "teste 3",
-      "observacao": "picareta",
-      "grauPericulosidade": 2,
+      "nome": "Produto 3",
+      "observacao": "picareta 3",
+      "grauPericulosidade": 1,
       "arrependido": false,
       "id": 3
     },
     {
-      "nome": "teste 4",
-      "observacao": "picareta",
-      "grauPericulosidade": 3,
-      "arrependido": true,
+      "nome": "Produto 4",
+      "observacao": "picareta 4",
+      "grauPericulosidade": 1,
+      "arrependido": false,
       "id": 4
     },
     {
-      "nome": "sdfdsf",
-      "observacao": "canalha",
+      "nome": "Produto 5",
+      "observacao": "picareta 5",
       "grauPericulosidade": 1,
       "arrependido": false,
       "id": 5

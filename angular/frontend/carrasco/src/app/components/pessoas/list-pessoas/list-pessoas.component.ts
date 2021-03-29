@@ -4,6 +4,9 @@ import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
 import { Pessoa } from '../model/Pessoa';
 import { PessoaService } from '../service/pessoa.service';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { DeletePessoaComponent } from '../delete-pessoa/delete-pessoa.component';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-list-pessoas',
@@ -22,15 +25,16 @@ export class ListPessoasComponent implements AfterViewInit {
 
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'nome','grauPericulosidade','arrependido'];
+  displayedColumns = ['id', 'nome','grauPericulosidade','arrependido','acoes'];
 
   
 
-  constructor(private pessoaService: PessoaService) {
-    this.pessoaService.obterPessoas().subscribe((listaPessoas)=> {
-      console.log('servico'+listaPessoas);
-      this.pessoas = listaPessoas; });
-    console.log('pessoas obtidas'+this.pessoas);
+  constructor(private pessoaService: PessoaService, 
+    private dialog: MatDialog) {
+    // this.pessoaService.obterPessoas().subscribe((listaPessoas)=> {
+    //   console.log('servico'+listaPessoas);
+    //   this.pessoas = listaPessoas; });
+    // console.log('pessoas obtidas'+this.pessoas);
   }
 
   obterDescricaoPericulosidade(valor: number): string{
@@ -45,7 +49,19 @@ export class ListPessoasComponent implements AfterViewInit {
     }
   }
 
+  openDialog(id:number ) {
+    this.dialog.open(DeletePessoaComponent, {
+      data: {
+        idPessoaSerRemovido: id
+      }
+    });
+     console.log("Id number " + id)
+     this.dialog.afterAllClosed.subscribe(data=> this.ngAfterViewInit() )
+  }
+
   ngAfterViewInit(): void {
-   
+    this.pessoaService.obterPessoas().subscribe((listaPessoas)=> {
+      console.log('servico'+listaPessoas);
+      this.pessoas = listaPessoas; });
   }
 }

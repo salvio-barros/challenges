@@ -27,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListPessoasComponent } from './components/pessoas/list-pessoas/list-pessoas.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort'
+import { MatSortModule } from '@angular/material/sort';
+import { DeletePessoaComponent } from './components/pessoas/delete-pessoa/delete-pessoa.component'
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { MatSortModule } from '@angular/material/sort'
     PessoasCrudComponent,
     RedDirective,
     CreatePessoaComponent,
-    ListPessoasComponent
+    ListPessoasComponent,
+    DeletePessoaComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { MatSortModule } from '@angular/material/sort'
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatDialogModule
 
   ],
   providers: [],

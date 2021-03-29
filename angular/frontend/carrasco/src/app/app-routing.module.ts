@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 import { PessoasCrudComponent } from './views/pessoas-crud/pessoas-crud.component';
 import { CreatePessoaComponent } from './components/pessoas/create-pessoa/create-pessoa.component';
+import { DeletePessoaComponent } from './components/pessoas/delete-pessoa/delete-pessoa.component';
 
 const routes: Routes = [{
   path: "",
@@ -13,6 +14,9 @@ const routes: Routes = [{
 },{
   path: "pessoas/criar",
   component: CreatePessoaComponent
+}, {
+  path: "pessoas/delete/:id",
+  component: DeletePessoaComponent
 }
 ];
 

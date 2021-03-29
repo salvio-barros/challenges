@@ -37,7 +37,10 @@ export class PessoaService {
     return this.httpClient.put<Pessoa>(this.URL,pessoa);
   }
 
-  remover(id: number): void{
-     this.httpClient.delete(this.URL+'/'+id);
+  remover(id: number):  Observable<any>{
+    console.log("id a ser removido: " + id);
+    let urlRemocao =  `${this.URL}${id}`
+    console.log(urlRemocao);
+    return this.httpClient.delete(urlRemocao);
   }
 }
